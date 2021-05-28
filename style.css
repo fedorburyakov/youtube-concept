@@ -380,6 +380,16 @@ body {
     padding-right: 16px;
   }
 
+  .logo {
+    margin-right: 0;
+  }
+
+  .button-search {
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+  }
+
   .mobile-search {
     display: block;
     margin-left: auto;
