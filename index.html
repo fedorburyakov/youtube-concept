@@ -27,6 +27,14 @@
                 </svg>
             </button>
         </div>
+        <div class="mobile-search">
+            <button type="submit" class="button-search">
+                <svg class="icon icon-search" width="19" height="19">
+                    <use href="img/icons.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+        <!--./mobile-search-->
         <div class="icons">
             <a href="#" class="icons-link">
                 <svg class="icon icon-video" width="27" height="20">
@@ -43,12 +51,53 @@
                     <use href="img/icons.svg#notification"></use>
                 </svg>
             </a>
+            <a href="#" class="user">
+                <img src="img/avatar.jpg" alt="Федор Буряков" class="user-avatar">
+            </a>
+            <!--/.user-->
         </div>
-        <a href="#" class="user">
+        <a href="#" class="user-mobile">
             <img src="img/avatar.jpg" alt="Федор Буряков" class="user-avatar">
         </a>
-        <!--/.user-->
+        <!--/.user-mobile-->
     </header>
+    <div class="mobile-sidebar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-home" width="20" height="19">
+                        <use href="img/icons.svg#home"></use>
+                    </svg>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-trending" width="20" height="19">
+                        <use href="img/icons.svg#trending"></use>
+                    </svg>
+                    <span class="nav-text">Trending</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-subscriptions" width="20" height="19">
+                        <use href="img/icons.svg#subscriptions"></use>
+                    </svg>
+                    <span class="nav-text">Subscriptions</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-library" width="20" height="19">
+                        <use href="img/icons.svg#library"></use>
+                    </svg>
+                    <span class="nav-text">Library</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--./mobile-sidebar-->
     <div class="container">
         <aside class="sidebar">
             <nav class="nav">
@@ -199,20 +248,22 @@
         </aside>
         <main class="content">
             <div class="channel">
-                <a href="#" class="channel-title">
-                    <img src="img/Belle.png" alt="Belle" class="channel-avatar">
-                    <span class="channel-text">Belle Briggs</span>
-                </a>
-                <div class="slider-buttons">
-                    <div class="channel-button channel-button-prev channel-button-prev-1">
-                        <svg class="icon icon-left" width="28" height="28">
-                            <use href="img/icons.svg#left"></use>
+                <div class="channel-header">
+                    <a href="#" class="channel-title">
+                        <img src="img/Belle.png" alt="Belle" class="channel-avatar">
+                        <span class="channel-text">Belle Briggs</span>
+                    </a>
+                    <div class="slider-buttons">
+                        <div class="channel-button channel-button-prev channel-button-prev-1">
+                            <svg class="icon icon-left" width="28" height="28">
+                                <use href="img/icons.svg#left"></use>
+                                </svg>
+                        </div>
+                        <div class="channel-button channel-button-next channel-button-next-1">
+                            <svg class="icon icon-right" width="28" height="28">
+                                <use href="img/icons.svg#right"></use>
                             </svg>
-                    </div>
-                    <div class="channel-button channel-button-next channel-button-next-1">
-                        <svg class="icon icon-right" width="28" height="28">
-                            <use href="img/icons.svg#right"></use>
-                        </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-container channel-slider-1">
@@ -321,19 +372,21 @@
                 <!--/.swiper-container-->
             </div>
             <div class="channel">
-                <a href="#" class="channel-title">
-                    <span class="channel-text">Recomended</span>
-                </a>
-                <div class="slider-buttons">
-                    <div class="channel-button channel-button-prev channel-button-prev-2">
-                        <svg class="icon icon-left" width="28" height="28">
-                            <use href="img/icons.svg#left"></use>
-                        </svg>
-                    </div>
-                    <div class="channel-button channel-button-next channel-button-next-2">
-                        <svg class="icon icon-right" width="28" height="28">
-                            <use href="img/icons.svg#right"></use>
-                        </svg>
+                <div class="channel-header">
+                    <a href="#" class="channel-title">
+                        <span class="channel-text">Recommended</span>
+                    </a>
+                    <div class="slider-buttons">
+                        <div class="channel-button channel-button-prev channel-button-prev-2">
+                            <svg class="icon icon-left" width="28" height="28">
+                                <use href="img/icons.svg#left"></use>
+                            </svg>
+                        </div>
+                        <div class="channel-button channel-button-next channel-button-next-2">
+                            <svg class="icon icon-right" width="28" height="28">
+                                <use href="img/icons.svg#right"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-container channel-slider-2">
@@ -392,24 +445,29 @@
                 <!--/.swiper-container-->
             </div>
             <div class="channel channel-last">
-                <div class="recomended-channel">
-                    <a href="#" class="channel-title change-title-3">
-                        <img src="img/food_and_drink.png" alt="food_and_drink" class="channel-avatar">
-                        <span class="channel-text">Food & Drink</span>
-                    </a>
-                    <span class="recomended-text">Recommended channel for you</span>
-                </div>
-                <a class="subscribe-button">Subscribe 2.3m</a>
-                <div class="slider-buttons">
-                    <div class="channel-button channel-button-prev channel-button-prev-3">
-                        <svg class="icon icon-left" width="28" height="28">
-                            <use href="img/icons.svg#left"></use>
-                        </svg>
+                <div class="channel-header">
+                    <div class="recommended-channel">
+                        <a href="#" class="channel-title change-title-3">
+                            <img src="img/food_and_drink.png" alt="food_and_drink" class="channel-avatar">
+                            <span class="channel-text">Food & Drink</span>
+                        </a>
+                        <span class="recommended-text">Recommended channel for you</span>
                     </div>
-                    <div class="channel-button channel-button-next channel-button-next-3">
-                        <svg class="icon icon-right" width="28" height="28">
-                            <use href="img/icons.svg#right"></use>
-                        </svg>
+                        <a class="subscribe-button">
+                            <span>Subscribe</span>
+                            <span class="subscribe-count">2.3m</span>
+                        </a>
+                    <div class="slider-buttons">
+                        <div class="channel-button channel-button-prev channel-button-prev-3">
+                            <svg class="icon icon-left" width="28" height="28">
+                                <use href="img/icons.svg#left"></use>
+                            </svg>
+                        </div>
+                        <div class="channel-button channel-button-next channel-button-next-3">
+                            <svg class="icon icon-right" width="28" height="28">
+                                <use href="img/icons.svg#right"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-container channel-slider-3">
